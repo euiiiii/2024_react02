@@ -2,7 +2,7 @@
 import { Button } from '@mui/material';
 import React from 'react';
 
-// 선언식: 호이스팅이 된다.
+// 선언식: 호이스팅이 된다. => 선언식은 코드 상단으로 끌어 올려지기 때문에 함수 선언 위치에 상관없이 호출 가능
 // function Btn({name}) {
 //   return (
 //     <Button variant='contained' 
@@ -26,7 +26,7 @@ import React from 'react';
 //   >{name}</Button>
 // );
 
-// witch: 이벤트 헨들러에서 이벤트의 유형이나 성격을 나타내는 역할
+// witch: 이벤트 핸들러에서 이벤트의 유형이나 성격을 나타내는 역할
 // 특정 이벤트가 발생했을 때 어떤 이벤트가 발생했는지를 나타내는 문자열 값을 전달 받음
 
 // ()=>(): 단순히 하나의 표현식을 바로 반환할 때
@@ -44,6 +44,7 @@ import React from 'react';
 // )
 
 // e: 이벤트객체를 말한다.
+// 아래 코드는 콘솔에 이벤트 객체를 볼 수 있는 코드이다.
 const handleEvent = (name, e)=>{
   console.log(name, e)
 }
