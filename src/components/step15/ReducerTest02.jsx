@@ -26,6 +26,9 @@ function ReducerTest02(props) {
         }}
         step="1000"
       />
+
+      {/* payload: number는 reducer 함수에 있는 action에 input의 number 값을 담아서 넘겨 보낸다. */}
+      {/* setNumber(0): 예금 or 출금 버튼을 클릭 후, input의 number 값을 0으로 초기화 시킨다. */}
       <button onClick={() => {
           dispatch({type : 'deposit', payload: number});
           setNumber(0); // 입력값 초기화
