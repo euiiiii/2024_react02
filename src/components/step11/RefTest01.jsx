@@ -3,6 +3,8 @@ import React, { useRef, useState } from 'react';
 
 /* 
   useRef
+  - 저장공간 또는 DOM 요소에 접근하기 위해 사용되는 React Hook이다. reference, 참조를 뜻함
+  - 특정한 DOM 요소에 접근 가능하면, 불필요한 재렌더링을 하지 않는다는 장점이 있다.
   1. 값의 유지: 값의 변화를 추적하지만 값이 변경되더라도 렌더링이 되지 않는다.
                 불필요한 렌더링 방지
   2. DOM 요소 참조: focus()
